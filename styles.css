@@ -46,7 +46,7 @@ p {
     margin: 8px;
 }
 
-@media (max-width: 500px){
+@media screen and (orientation: portrait){
     #box {
         width: 100%;
     }

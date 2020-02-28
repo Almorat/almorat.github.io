@@ -1,0 +1,43 @@
+/* Hoja de estilos */
+html body{
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#profile_pick {
+    flex-basis: 1 1 15%;
+    width: 16%;
+    min-width: 240px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 8px;
+}
+
+#div1 {
+    flex: 1 1 25%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+    min-width: 340px;
+    padding: 20px;
+    margin: 8px;
+}
+

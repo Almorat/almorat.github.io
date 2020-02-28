@@ -46,3 +46,8 @@ p {
     margin: 8px;
 }
 
+@media (max-width: 500px){
+    #box {
+        width: 100%;
+    }
+}

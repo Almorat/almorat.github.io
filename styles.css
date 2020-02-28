@@ -21,7 +21,7 @@ p {
 }
 
 #profile_pick {
-    flex-basis: 1 1 15%;
+    flex-grow: 1;
     width: 16%;
     min-width: 240px;
     height: auto;
@@ -31,10 +31,11 @@ p {
 }
 
 #div1 {
-    flex: 1 1 25%;
+    flex-grow: 1;
     background-color: white;
     border-radius: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25%;
     height: auto;
     min-width: 340px;
     padding: 20px;

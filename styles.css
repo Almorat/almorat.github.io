@@ -3,7 +3,6 @@ html body{
     margin: 0;
     padding: 8px;
     display: flex;
-    flex-flow: wrap;
 }
 
 *{
@@ -31,34 +30,56 @@ hr {
     margin-bottom: 15px;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    min-width: 300px;
+    height: fit-content;
+}
+
+.storage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    flex: 4;
+    min-width: 300px;
+    height: 100%;
+}
+
 #profile_pick {
     display: block;
-    flex-grow: 1;
-    width: 15%;
-    min-width: 240px;
-    height: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 8px;
+    padding: 0;
+    margin-bottom: 16px;
 }
 
 #box {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     flex-direction: column;
     background-color: white;
     border-radius: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 25%;
     min-width: min-content;
-    height: auto;
+    height: fit-content;
     padding: 20px;
-    margin: 8px;
+    margin: 0 0 8px 8px;
 }
 
-#box.presentation {
-    width: 10%;
-    height: auto;
+.presentation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 16px 32px 16px;
+    font-size: 2.2vh;
 }
 
 #img_box{
@@ -77,8 +98,13 @@ hr {
     margin: 10px 0 10px 0;
 }
 
+.img_container {
+    position: relative;
+    color: white;
+  }
+
 @media screen and (orientation: portrait){
-    #box {
-        width: 100%;
+    html body{
+        flex-direction: column;
     }
 }

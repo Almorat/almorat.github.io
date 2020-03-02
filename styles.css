@@ -57,7 +57,7 @@ hr {
     border-radius: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 #box {
@@ -78,8 +78,7 @@ hr {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 0 16px 32px 16px;
-    font-size: 2.2vh;
+    padding: 0 64px 32px 16px;
 }
 
 #img_box{
@@ -88,7 +87,6 @@ hr {
     width: 25%;
     height: 100%;
     border-radius: 14px;
-    margin-right: 10px;
 }
 
 #box div {
@@ -104,7 +102,16 @@ hr {
   }
 
 @media screen and (orientation: portrait){
-    html body{
+    html body {
         flex-direction: column;
+    }
+
+    #box {
+        flex: 0 0 100%;
+        margin: 8px 0 8px 0;
+    }
+
+    .presentation {
+        font-size: 2em;
     }
 }

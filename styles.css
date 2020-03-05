@@ -1,7 +1,7 @@
 /* Hoja de estilos */
 html body{
     margin: 0;
-    padding: 8px;
+    padding: 8px 8px 8px 0;
     display: flex;
 }
 
@@ -12,7 +12,7 @@ html body{
 h1 {
     font-family: "Poppins", serif;
     font-weight: 700;
-    margin: 0 0 5px 0;
+    margin: 0 0 8px 0;
     padding: 0;
 }
 
@@ -30,12 +30,10 @@ hr {
     margin-bottom: 15px;
 }
 
-.menu {
+.main {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0 0 8px 0;
-    flex: 1;
+    width: 18%;
     min-width: 300px;
     height: fit-content;
 }
@@ -45,7 +43,7 @@ hr {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    flex: 4;
+    width: 82%;
     min-width: 300px;
     height: 100%;
 }
@@ -57,48 +55,75 @@ hr {
     border-radius: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0;
+    margin: 0;
 }
 
-#box {
+/*Boxes for content*/
+.box_cv{
     display: flex;
-    flex: 1;
     flex-direction: column;
     background-color: white;
     border-radius: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 25%;
+    flex: 1 0 20%;
     min-width: min-content;
-    height: auto;
     padding: 20px;
     margin: 0 0 8px 8px;
 }
 
+.box_cv > div{
+    display: block;
+    width: auto;
+    min-width: min-content;
+    height: fit-content;
+    margin: 10px 0 10px 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.icon {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 16px;
+    margin: 8px 0 0 8px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: royalblue;
+}
+
+/*Text on image*/
 .img_text {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 0 64px 16px 16px;
+    padding: 0 64px 16px 24px;
 }
 
 #img_box{
     display: block;
     float: left;
     width: 25%;
-    height: 100%;
     border-radius: 14px;
     margin-right: 16px;
-}
-
-#box div {
-    display: block;
-    width: 100%;
-    height: fit-content;
-    margin: 10px 0 10px 0;
 }
 
 .img_with_text {
     position: relative;
     color: white;
+    padding-left: 8px;
   }
 
 @media screen and (orientation: portrait){
@@ -106,13 +131,23 @@ hr {
         flex-direction: column;
     }
 
-    #box {
+    .box_cv {
         flex: 0 0 100%;
-        margin: 8px 0 8px 0;
+        margin: 0 0 8px 0;
+    }
+
+    .main {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .storage {
+        width: 100%;
+        padding-left: 8px;
     }
 
     .img_text {
-        font-size: 2.8em;
+        font-size: 2em;
         padding: 0 64px 32px 32px;
     }
 }

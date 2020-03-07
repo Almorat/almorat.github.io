@@ -30,7 +30,7 @@ hr {
     margin-bottom: 15px;
 }
 
-.main {
+#main {
     display: flex;
     flex-direction: column;
     width: 18%;
@@ -38,14 +38,27 @@ hr {
     height: fit-content;
 }
 
-.storage {
+#main_storage {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     width: 82%;
     min-width: 300px;
     height: 100%;
+}
+
+.sub_storage {
+    display: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+#ini_storage {
+    display: flex;
 }
 
 #profile_pick {
@@ -59,7 +72,7 @@ hr {
 }
 
 /*Boxes for content*/
-.box_cv{
+#cv_storage > div, #ini_storage > div, #pr_storage > div{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -69,14 +82,6 @@ hr {
     min-width: min-content;
     padding: 20px;
     margin: 0 0 8px 8px;
-}
-
-.box_cv > div{
-    display: block;
-    width: auto;
-    min-width: min-content;
-    height: fit-content;
-    margin: 10px 0 10px 0;
 }
 
 .menu {
@@ -100,8 +105,12 @@ hr {
     cursor: pointer;
 }
 
+#ini_icon {
+    background-color: rgb(148, 148, 148);
+}
+
 .icon:hover {
-    background-color: royalblue;
+    background-color: hsla(0, 0%, 0%, 0.2)!important;
 }
 
 /*Text on image*/
@@ -131,17 +140,17 @@ hr {
         flex-direction: column;
     }
 
-    .box_cv {
+    #cv_storage > div, #ini_storage > div, #pr_storage > div {
         flex: 0 0 100%;
         margin: 0 0 8px 0;
     }
 
-    .main {
+    #main {
         width: 100%;
         margin-bottom: 8px;
     }
 
-    .storage {
+    #main_storage {
         width: 100%;
         padding-left: 8px;
     }

@@ -5,11 +5,10 @@
     <title>Almorat</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
-    <script src="jquery.js"></script> 
 </head>
 <body>
     <!--Main-->
-    <div class="main">
+    <div id="main">
         <div class="img_with_text">
             <img src="images/Alberto_Morata.jpg" alt="Profile_pick" id="profile_pick">
             <div class="img_text">
@@ -19,15 +18,15 @@
         </div>
         <div class="menu">
             <!--<button onclick="myFunction()">Click Me</button>-->
-            <div class="icon">
+            <div class="icon" id="ini_icon" onclick="ini_selector('ini_storage', 'ini_icon')">
                 <img src="images/icons/contactos.svg" alt="información">
                 <p>Inicio</p>
             </div>
-            <div class="icon">
+            <div class="icon" id="cv_icon" onclick="selector('cv_storage', 'cv_icon')">
                 <img src="images/icons/contactos.svg" alt="información">
                 <p>Curriculum</p>
             </div>
-            <div class="icon">
+            <div class="icon" onclick="select('box_pr')">
                 <img src="images/icons/contactos.svg" alt="información">
                 <p>Proyectos</p>
             </div>
@@ -38,77 +37,101 @@
         </div>
     </div>
     <!--Storage-->
-    <div class="storage">
-        <div class="box_cv">
-            <h1>Education</h1>
+    <div id="main_storage">
+        <!--Inicio storage-->
+        <div class="sub_storage" id="ini_storage">
             <div>
-                <p style="font-weight: 500;">
-                    <img src="images/UPV_logo.jpg" alt="UPV_logo" id="img_box">
-                    Student in Double Degree of Computer Science and Business Administration and Management in the Polytechnical University of Valencia (UPV).
-                    <p style="font-weight: 300;">September 2015 – Expected by 2020.<br>Currently in my last year.
-                </p>
-            </div>
-            <hr>
-            <div>
-                <p style="font-weight: 500;">
-                    <img src="images/vsb_technicka_univerzita_logo.png" alt="vsb_technicka_univerzita_logo" id="img_box">
-                    Erasmus at VŠB University - Technical University of Ostrava.
-                    <p style="font-weight: 300;">6 month.
-                </p>
+                <h1>Inicio</h1>
+                <p>Este texto es mas largo de lo normal para ver si llegamos a los 420 pixeles y hace un enter bueno. Y lo hace!</p>
             </div>
         </div>
-        <div class="box_cv">
-            <h1>Language skills</h1>
+        <!--CV storage-->
+        <div class="sub_storage" id="cv_storage">
             <div>
-                <p style="font-weight: 500;">
-                    <img src="images/flag_ES.png" alt="flag_ES" id="img_box">
-                    Spanish
-                    <p style="font-weight: 300;">First language.</p>
-                </p>
+                <h1>Education</h1>
+                <div>
+                    <p style="font-weight: 500;">
+                        <img src="images/UPV_logo.jpg" alt="UPV_logo" id="img_box">
+                        Student in Double Degree of Computer Science and Business Administration and Management in the Polytechnical University of Valencia (UPV).
+                        <p style="font-weight: 300;">September 2015 – Expected by 2020.<br>Currently in my last year.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <p style="font-weight: 500;">
+                        <img src="images/vsb_technicka_univerzita_logo.png" alt="vsb_technicka_univerzita_logo" id="img_box">
+                        Erasmus at VŠB University - Technical University of Ostrava.
+                        <p style="font-weight: 300;">6 month.
+                    </p>
+                </div>
             </div>
-            <hr>
             <div>
-                <p style="font-weight: 500;">
-                    <img src="images/flag_UK.png" alt="flag_UK" id="img_box">
-                    English
-                    <p style="font-weight: 300;">Intermediate level writing, reading and speaking (non-certificated b2 level).
-                </p>
+                <h1>Language skills</h1>
+                <div>
+                    <p style="font-weight: 500;">
+                        <img src="images/flag_ES.png" alt="flag_ES" id="img_box">
+                        Spanish
+                        <p style="font-weight: 300;">First language.</p>
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <p style="font-weight: 500;">
+                        <img src="images/flag_UK.png" alt="flag_UK" id="img_box">
+                        English
+                        <p style="font-weight: 300;">Intermediate level writing, reading and speaking (non-certificated b2 level).
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <p style="font-weight: 500;">
+                        <img src="images/flag_CAT.png" alt="flag_CAT" id="img_box">
+                        Catalan
+                        <p style="font-weight: 300;">Bilingual level.</p>
+                    </p>
+                </div>
             </div>
-            <hr>
             <div>
-                <p style="font-weight: 500;">
-                    <img src="images/flag_CAT.png" alt="flag_CAT" id="img_box">
-                    Catalan
-                    <p style="font-weight: 300;">Bilingual level.</p>
-                </p>
+                <h1>Datos personales</h1>
+                <p>Este texto es mas largo de lo normal para ver si llegamos a los 420 pixeles y hace un enter bueno. Y lo hace!</p>
             </div>
-        </div>
-        <div class="box_cv">
-            <h1>Datos personales</h1>
-            <p>Este texto es mas largo de lo normal para ver si llegamos a los 420 pixeles y hace un enter bueno. Y lo hace!</p>
-        </div>
-        <div class="box_cv">
-            <h1>Datos personales</h1>
-            <p>Este texto es mas largo de lo normal para ver si llegamos a los 420 pixeles y hace un enter bueno. Y lo hace!</p>
-        </div>
-        <div class="box_cv">
-            <h1>Pueyo</h1>
-            <p>A.K.A. Peyo</p>
-        </div>
-        <div class="box_cv">
-            <h1>Albertini</h1>
-            <p>A.K.A. Clementini</p>
+            <div>
+                <h1>Datos personales</h1>
+                <p>Este texto es mas largo de lo normal para ver si llegamos a los 420 pixeles y hace un enter bueno. Y lo hace!</p>
+            </div>
+            <div>
+                <h1>Pueyo</h1>
+                <p>A.K.A. Peyo</p>
+            </div>
+            <div>
+                <h1>Albertini</h1>
+                <p>A.K.A. Clementini</p>
+            </div>
         </div>
     </div>
+    <!--Scripts-->
     <script>
-        function myFunction() {
-            var x = document.getElementsByClassName("box_cv");
-            for(i=0;i<x.length;i++){
-                if (x[i].style.display === "none") {
-                    x[i].style.display = "flex";
-                } else {
-                    x[i].style.display = "none";
-                }
+        function selector(st, ic) {
+            var aux = document.getElementById(st);
+            var icon = document.getElementById(ic);
+            if(aux.style.display == "flex"){
+                aux.style.display = "none";
+                icon.style.backgroundColor = "white";
+            } else {
+                aux.style.display = "flex";
+                icon.style.backgroundColor = "rgb(148, 148, 148)";
+            }
+        }
+        
+        function ini_selector(st, ic) {
+            var aux = document.getElementById(st);
+            var icon = document.getElementById(ic);
+            if(aux.style.display == "none"){
+                aux.style.display = "flex";
+                icon.style.backgroundColor = "rgb(148, 148, 148)";
+            } else {
+                aux.style.display = "none";
+                icon.style.backgroundColor = "white";
             }
         }
     </script>

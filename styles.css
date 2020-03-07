@@ -156,7 +156,11 @@ hr {
     }
 
     .img_text {
-        font-size: 2em;
+        font-size: 6.2vw;
         padding: 0 64px 32px 32px;
+    }
+
+    .icon, .menu, #main_storage {
+        font-size: 4vw;
     }
 }

@@ -35,7 +35,7 @@ hr {
     flex-direction: column;
     width: 18%;
     min-width: 300px;
-    height: fit-content;
+    height: 100%;
 }
 
 #main_storage {
@@ -72,6 +72,23 @@ hr {
 }
 
 /*Boxes for content*/
+.box{
+    display: flex;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: min-content;
+    padding: 16px;
+}
+
+#contact {
+    margin: 8px 0 0 8px;
+}
+
+#contact img {
+    flex: 1;
+}
+
 #cv_storage > div, #ini_storage > div, #pr_storage > div{
     display: flex;
     flex-direction: column;
@@ -80,13 +97,14 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     flex: 1 0 20%;
     min-width: min-content;
-    padding: 20px;
+    padding: 16px;
     margin: 0 0 8px 8px;
 }
 
 .menu {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
     height: auto;
     padding: 0;
@@ -113,14 +131,6 @@ hr {
     background-color: hsla(0, 0%, 0%, 0.2)!important;
 }
 
-/*Text on image*/
-.img_text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 64px 16px 24px;
-}
-
 #img_box{
     display: block;
     float: left;
@@ -129,10 +139,18 @@ hr {
     margin-right: 16px;
 }
 
+/*Text on image*/
+.img_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 64px 16px 24px;
+}
+
 .img_with_text {
     position: relative;
     color: white;
-    padding-left: 8px;
+    margin-left: 8px;
   }
 
 @media screen and (orientation: portrait){

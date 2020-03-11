@@ -9,15 +9,16 @@
 <body>
     <!--Main-->
     <div id="main">
+        <!--Profile pic-->
         <div class="img_with_text">
-            <img src="images/Alberto_Morata.jpg" alt="Profile_pick" id="profile_pick">
+            <img src="images/Alberto_Morata.jpg" alt="Profile_pic" id="profile_pic">
             <div class="img_text">
                 <h1>Hi! I'm Alberto.</h1>
                 <p style="font-size: 500;">Computer Engineer with extensive knowledge in the business sector.</p>
             </div>
         </div>
+        <!--Nav menu-->
         <div class="menu">
-            <!--<button onclick="myFunction()">Click Me</button>-->
             <div class="icon" id="ini_icon" onclick="ini_selector('ini_storage', 'ini_icon')">
                 <p>Inicio</p>
             </div>
@@ -28,14 +29,15 @@
                 <p>Proyectos</p>
             </div>
         </div>
+        <!--Contact-->
         <div class="contact">
             <a href="#"><img src="images/icons/linkedin.svg" alt="linkedin" title="linkedin"></a>
-            <a href="#"><img src="images/icons/github.svg" alt="github" title="github"></a>
+            <a href="#"><img src="images/icons/github.svg" alt="github" title="github"></a> 
             <a href="#"><img src="images/icons/email.svg" alt="email" title="email"></a>
             <a href="#"><img src="images/icons/whatsapp.svg" alt="whatsapp" title="whatsapp"></a>
         </div>
     </div>
-    <!--Storage-->
+    <!--Main Storage-->
     <div id="main_storage">
         <!--Inicio storage-->
         <div class="sub_storage" id="ini_storage">
@@ -44,7 +46,7 @@
                 <p>Este texto es mas largo de lo normal para ver si llegamos a los 420 pixeles y hace un enter bueno. Y lo hace!</p>
             </div>
         </div>
-        <!--CV storage-->
+        <!--Curriculum storage-->
         <div class="sub_storage" id="cv_storage">
             <div>
                 <h1>Education</h1>
@@ -110,6 +112,7 @@
     </div>
     <!--scripts-->
     <script>
+        //Menu item function
         function selector(st, ic) {
             var aux = document.getElementById(st);
             var icon = document.getElementById(ic);
@@ -121,7 +124,7 @@
                 icon.style.backgroundColor = "rgb(148, 148, 148)";
             }
         }
-        
+        //Menu item Inicio function. Another function due a set style error.
         function ini_selector(st, ic) {
             var aux = document.getElementById(st);
             var icon = document.getElementById(ic);

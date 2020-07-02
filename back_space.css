@@ -1,0 +1,56 @@
+/*back_space*/
+.back_space {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    height: 400px;
+    width: 100vw;
+    z-index: -1;
+    background-color: white;
+    padding: 64px 8px 16px 8px;
+}
+
+.reveal_back_space {
+    height: 400px;
+}
+
+.active {
+    position: relative;
+    height: 100vh;
+    margin-top: -21px;
+}
+
+.activetwo {
+    display: none;
+}
+
+/*content*/
+.content {
+    height: fit-content;
+    max-width:fit-content;
+    padding: 8px;
+}
+
+.content h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+/*left image text content*/
+.left_img_text{
+    min-height: 180px;
+    max-width: 840px;
+}
+
+.left_img_text div {
+    position: relative;
+    float: left;
+    height: 180px;
+    width: 180px;
+}
+
+.left_img_text div img {
+    position: absolute;
+    width: 100%;
+}

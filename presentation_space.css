@@ -1,24 +1,5 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    letter-spacing: 1vh;
-}
-
-/*presentation space*/
-.presentation {
+/*presentation_space*/
+.presentation_space {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,29 +10,8 @@ h1 {
     box-shadow: 0 14px 28px rgb(0, 0, 0, 0.1);
 }
 
-/*back space*/
-.back_curtain {
-    position: fixed;
-    bottom: 0;
-    height: 400px;
-    width: 100vw;
-    z-index: -1;
-    background-color: white;
-    text-align: center;
-}
-
-.reveal_back_curtain {
-    height: 400px;
-}
-
-.active {
-    position: relative;
-    height: 100vh;
-    margin-top: -21px;
-}
-
-.activetwo {
-    display: none;
+.presentation_space h1 {
+    letter-spacing: 1vh;
 }
 
 /*profile pic*/

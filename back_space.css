@@ -5,10 +5,10 @@
     position: fixed;
     bottom: 0;
     height: 400px;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
     background-color: white;
-    padding: 64px 8px 16px 8px;
+    padding: 32px 8px 16px 8px;
 }
 
 .reveal_back_space {
@@ -26,31 +26,40 @@
 }
 
 /*content*/
-.content {
-    height: fit-content;
-    max-width:fit-content;
-    padding: 8px;
+.back_space > div {
+    flex: 1 1 auto;
+    height: auto;
+    margin: 8px;
+    background-color: white;
 }
 
-.content h1{
-    font-size: 60px;
+.back_space > div h1{
+    display: block;
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.back_space > div h2{
+    font-size: 38px;
     margin: 0;
 }
 
 /*left image text content*/
 .left_img_text{
-    min-height: 180px;
-    max-width: 840px;
+    min-height: 140px;
 }
 
 .left_img_text div {
     position: relative;
     float: left;
-    height: 180px;
-    width: 180px;
+    text-align: center;
+    overflow: hidden;
+    height: 120px;
+    width: 120px;
+    margin: 0 8px 8px 0;
+    
 }
 
 .left_img_text div img {
-    position: absolute;
-    width: 100%;
+    height: 100%;
 }
